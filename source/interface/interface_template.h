@@ -11,5 +11,6 @@
 
 namespace femtin
 {
-
+//! \example example/example_template/src/main.cpp
+//! This a simple example on how to use Doxygen example tag.
 }
