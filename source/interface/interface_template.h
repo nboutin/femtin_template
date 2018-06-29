@@ -1,4 +1,4 @@
-//! \file	source_template.h
+//! \file	interface_template.h
 //! \date	29/06/2018
 //! \author	nboutin
 //! \copyright	GNU GENERAL PUBLIC LICENSE
@@ -6,3 +6,10 @@
 //!
 //! Project: Femtin\n
 //! Software Component: Femtin Template
+
+#pragma once
+
+namespace femtin
+{
+
+}

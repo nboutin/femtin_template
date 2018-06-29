@@ -1,7 +1,11 @@
-cmake_minimum_required(3.0.0 FATAL_ERROR)
+##### Configuration
+
+cmake_minimum_required(3.0.0)
 
 set(RUNTIME_OUTPUT_DIRECTORY output/bin)
 set(LIBRARY_OUTPUT_DIRECTORY output/bin)
+
+##### Source
 
 add_subdirectory(source)
 
