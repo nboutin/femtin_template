@@ -1,6 +1,6 @@
 ##### Configuration
 
-cmake_minimum_required(3.0.0)
+cmake_minimum_required(VERSION 3.0.0)
 project(example_template)
 
 ##### 3rd party
@@ -11,7 +11,7 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR}/inc)
 
 ##### Source
 
-set(source
+set(SOURCE
 	${CMAKE_CURRENT_SOURCE_DIR}/src/main.cpp
 )
 
@@ -21,12 +21,13 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Werror")
 
 ##### Target
 
-add_executable(${PROJECT_NAME} ${source})
+add_executable(${PROJECT_NAME} ${SOURCE})
 
-target_link_libraries(${PROJECT_NAME}
+target_link_libraries(
+	${PROJECT_NAME}
 	#lib_name
 )
 
 ##### Install
 
-install(TARGETS ${PROJECT_NAME} DESTINATION ${TO_BE_DEFINED})
+install(TARGETS ${PROJECT_NAME} RUNTIME DESTINATION ${EXAMPLE_PATH})

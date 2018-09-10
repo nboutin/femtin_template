@@ -1,7 +1,7 @@
 ##### Configuration
 
-cmake_minimum_required(3.0.0)
-project(project_unittest)
+cmake_minimum_required(VERSION 3.0.0)
+project(comp_name_unittest_catch)
 
 ##### 3rd party
 
@@ -16,7 +16,7 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR}/inc)
 
 ##### Source
 
-set(source
+set(SOURCE
 	${CMAKE_CURRENT_SOURCE_DIR}/src/main.cpp
 	${CMAKE_CURRENT_SOURCE_DIR}/src/test_template.cpp
 )
@@ -27,14 +27,15 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Werror")
 
 ##### Target
 
-add_executable(${PROJECT_NAME} ${source})
+add_executable(${PROJECT_NAME} ${SOURCE})
 
 target_link_libraries(
 	${PROJECT_NAME}
 	Catch
 )
 
-##### install(
+##### install
 
-install(TARGETS ${PROJECT_NAME} DESTINATION ${TO_BE_DEFINED})
+# DELETE ME: INSTALL_TEST_PATH define in recipe
+install(TARGETS ${PROJECT_NAME} RUNTIME DESTINATION ${OSS_TEST_UNIT_PATH})
 

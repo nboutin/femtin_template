@@ -1,6 +1,6 @@
-//! \file	interface_template.h
+//! \file	template.h
 //! \date	20/06/2018
-//! \author	nboutin
+//! \author	OS Services
 //! \copyright	GNU GENERAL PUBLIC LICENSE
 //! Version 3, 29 June 2007
 //!
@@ -11,6 +11,5 @@
 
 namespace comp_name
 {
-//! \example example/example_template/src/main.cpp
-//! This a simple example on how to use Doxygen example tag.
+
 }

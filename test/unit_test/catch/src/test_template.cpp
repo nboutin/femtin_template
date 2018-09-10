@@ -1,4 +1,4 @@
-//! \file	interface_template.h
+//! \file 	test_template.cpp
 //! \date	20/06/2018
 //! \author	nboutin
 //! \copyright	GNU GENERAL PUBLIC LICENSE
@@ -7,10 +7,9 @@
 //! Project: Femtin\n
 //! Software Component: Femtin Template
 
-#pragma once
+#include <catch.hpp>
 
-namespace comp_name
+TEST_CASE("first test","[tag]")
 {
-//! \example example/example_template/src/main.cpp
-//! This a simple example on how to use Doxygen example tag.
+	CHECK(true);
 }
